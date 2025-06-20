@@ -1,0 +1,6 @@
+@DatosMastro.Api_HostAddress = http://localhost:5104
+
+GET {{DatosMastro.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
