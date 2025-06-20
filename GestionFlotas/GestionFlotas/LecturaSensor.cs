@@ -19,9 +19,13 @@ namespace GestionFlotas
 
         public string EstadoCamion { get; set; } = string.Empty;
 
-        public int CamionId { get; set; }  // Solo se guarda como dato, no como FK
+        public int CamionId { get; set; }  // Solo se guarda como dato, no como FK, Se queda como dato aislado
 
-        // ❌ Se elimina la navegación
-        // public Camion? Camion { get; set; }
+
+        /* Se elimina la navegación, no se realiza la navegacion por que ahi si tendria una relacion con la tabla de SQLSERVER 
+        public Camion? Camion { get; set; }
+        no debemos agregar propiedades de navegacion aqui para que no se relacionen las tablas 
+         * Solo se esta  guardando el ID del camión como dato numérico, 
+         * sin relación ni integridad referencial con la tabla Camiones de la otra base SQL Server.*/
     }
 }

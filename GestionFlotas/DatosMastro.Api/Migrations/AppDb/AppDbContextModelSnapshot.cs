@@ -216,13 +216,11 @@ namespace DatosMastro.Api.Migrations.AppDb
 
             modelBuilder.Entity("GestionFlotas.LecturaSensor", b =>
                 {
-                    b.HasOne("GestionFlotas.Camion", "Camion")
+                    b.HasOne("GestionFlotas.Camion", null)
                         .WithMany("Lecturas")
                         .HasForeignKey("CamionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Camion");
                 });
 
             modelBuilder.Entity("GestionFlotas.Mantenimiento", b =>

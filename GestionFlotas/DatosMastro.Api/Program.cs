@@ -15,7 +15,8 @@ namespace DatosMastro.Api
 
             // PostgreSQL: SensorDbContext (Lecturas de Sensores)
             builder.Services.AddDbContext<SensorDbContext>(options =>
-                options.UseNpgsql(builder.Configuration.GetConnectionString("SensorDbContext")));
+                options.UseNpgsql(builder.Configuration.GetConnectionString("SensorDbContext") ?? throw new InvalidOperationException("Connection string 'SensorDbContext' not found.")));
+
 
 
             // Add services to the container.

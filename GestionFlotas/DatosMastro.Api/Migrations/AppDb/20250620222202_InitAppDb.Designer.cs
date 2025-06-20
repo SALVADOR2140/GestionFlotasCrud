@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DatosMastro.Api.Migrations.AppDb
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250620031508_InitAppDb")]
+    [Migration("20250620222202_InitAppDb")]
     partial class InitAppDb
     {
         /// <inheritdoc />
@@ -219,13 +219,11 @@ namespace DatosMastro.Api.Migrations.AppDb
 
             modelBuilder.Entity("GestionFlotas.LecturaSensor", b =>
                 {
-                    b.HasOne("GestionFlotas.Camion", "Camion")
+                    b.HasOne("GestionFlotas.Camion", null)
                         .WithMany("Lecturas")
                         .HasForeignKey("CamionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Camion");
                 });
 
             modelBuilder.Entity("GestionFlotas.Mantenimiento", b =>

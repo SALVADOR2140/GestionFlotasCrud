@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DatosMastro.Api.Migrations.SensorDb
 {
     [DbContext(typeof(SensorDbContext))]
-    [Migration("20250620035137_InitSensorDb")]
+    [Migration("20250620222237_InitSensorDb")]
     partial class InitSensorDb
     {
         /// <inheritdoc />
