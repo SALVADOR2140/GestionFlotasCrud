@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatosMastro.Api", "DatosMas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestionflotas.API.Consumer", "Gestionflotas.API.Consumer\Gestionflotas.API.Consumer.csproj", "{155E564D-D485-4CA9-9F01-A3DB0840173C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionFlotas.MVC", "GestionFlotas.MVC\GestionFlotas.MVC.csproj", "{2B4548FD-4BFF-4EF5-BDD4-E443D0B24B81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{155E564D-D485-4CA9-9F01-A3DB0840173C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{155E564D-D485-4CA9-9F01-A3DB0840173C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{155E564D-D485-4CA9-9F01-A3DB0840173C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4548FD-4BFF-4EF5-BDD4-E443D0B24B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4548FD-4BFF-4EF5-BDD4-E443D0B24B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4548FD-4BFF-4EF5-BDD4-E443D0B24B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4548FD-4BFF-4EF5-BDD4-E443D0B24B81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

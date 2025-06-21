@@ -1,0 +1,64 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    margin-bottom: 60px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #212529; /* Color de texto por defecto (oscuro) */
+    background: #fff; /* Fondo claro por defecto */
+}
+
+/* SOLO HOME: Fondo oscuro */
+.home-tech-bg {
+    background: #101820 !important; /* Fondo oscuro solo para Home */
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #fff;
+}
+
+/* Tarjeta tecnológica para Home */
+.tech-card {
+    background: rgba(30, 40, 60, 0.95);
+    border: 1px solid #258cfb;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(4px);
+    padding: 2.5rem 2rem;
+    margin-top: 0;
+}
+
+/* Botones tecnológicos para Home */
+.tech-btn {
+    background: linear-gradient(90deg, #258cfb 0%, #183153 100%);
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tech-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px #258cfb55;
+    color: #fff;
+}
